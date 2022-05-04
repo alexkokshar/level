@@ -1,3 +1,15 @@
+@font-face {
+  font-family: HelveticaBold;
+  src: url('./assets/fonts/HelveticaBold.woff2') format('woff2'),
+    url('./assets/fonts/HelveticaBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: HelveticaRegular;
+  src: url('./assets/fonts/HelveticaRegular.woff2') format('woff2'),
+    url('./assets/fonts/HelveticaRegular.woff') format('woff');
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -77,13 +89,20 @@ h6 {
 body {
   color: #000;
   font-size: 14px;
+  font-family: HelveticaBold, Arial, Helvetica, sans-serif;
+}
+
+.reg {
+  font-family: HelveticaRegular, Arial, Helvetica, sans-serif;
 }
 
 :root {
   --black: #000;
   --white: #fff;
-}
+  --blue: #007ebd;
+  --red: #fc5239;
+  --red-hover: #d83d26;
+  --green: #1eb949;
 
-body {
-  background-color: var(--black);
+  --trans: 0.3s ease-in-out;
 }
