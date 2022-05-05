@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import cross from '../../../../assets/images/icons/cross.svg';
 import './Accordion.scss';
 
 function Accordion({ title, body }) {
@@ -12,20 +13,7 @@ function Accordion({ title, body }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="accordion__name">{title}</div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="17"
-          viewBox="0 0 16 17"
-          fill="none"
-          data-v-144a32d1=""
-        >
-          <path
-            d="M16 9.97342H9.14286V16.8306H6.85714V9.97342H0V7.68771H6.85714V0.830566H9.14286V7.68771H16V9.97342Z"
-            fill="#C5C5C5"
-            data-v-144a32d1=""
-          ></path>
-        </svg>
+        <img src={cross} alt="cross icon" />
       </button>
       <div className="accordion__body">{body}</div>
     </div>

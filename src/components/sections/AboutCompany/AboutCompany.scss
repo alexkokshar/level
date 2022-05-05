@@ -1,0 +1,20 @@
+.aboutcompany {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    flex-basis: 70%;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 890px) {
+  .aboutcompany {
+    flex-direction: column;
+    &__info {
+      margin-bottom: 30px;
+    }
+    &__sidebar {
+      margin: 0 auto;
+    }
+  }
+}

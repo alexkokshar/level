@@ -5,33 +5,39 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &.accordion__btn-open + .accordion__body {
       padding: 15px 0;
       max-height: 1000px;
       opacity: 1;
       transition: all 0.3s linear;
     }
-    & svg {
+    & img {
       transition: transform var(--trans);
+      display: block;
     }
-    &.accordion__btn-open svg {
+    &.accordion__btn-open img {
       transform: rotate(45deg);
-    }
-    & path {
-      transition: fill var(--trans);
-    }
-    &:hover path {
-      fill: var(--black);
     }
   }
   &__name {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
+    margin-right: 10px;
   }
   &__body {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: all 0.3s linear;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .accordion {
+    &__name {
+      font-size: 14px;
+    }
   }
 }

@@ -3,6 +3,9 @@
   justify-content: space-between;
   padding-bottom: 30px;
   &__column {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
   }
   &__title {
     font-size: 18px;
@@ -13,5 +16,18 @@
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.2;
+  }
+}
+
+@media (max-width: 570px) {
+  .description {
+    flex-direction: column;
+    &__column {
+      margin-right: 0;
+      margin-top: 20px;
+    }
+    &__text {
+      max-width: 100%;
+    }
   }
 }
