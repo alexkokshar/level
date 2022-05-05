@@ -1,0 +1,37 @@
+.accordion {
+  border-bottom: 1px solid #e7e7e7;
+  &__btn {
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &.accordion__btn-open + .accordion__body {
+      padding: 15px 0;
+      max-height: 1000px;
+      opacity: 1;
+      transition: all 0.3s linear;
+    }
+    & svg {
+      transition: transform var(--trans);
+    }
+    &.accordion__btn-open svg {
+      transform: rotate(45deg);
+    }
+    & path {
+      transition: fill var(--trans);
+    }
+    &:hover path {
+      fill: var(--black);
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &__body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+}
