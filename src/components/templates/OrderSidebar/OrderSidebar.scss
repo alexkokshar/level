@@ -1,0 +1,54 @@
+.sidebar {
+  max-width: 280px;
+  &__order {
+    background-color: #f5f5f5;
+    padding: 30px;
+  }
+  &__order-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  &__order-text {
+    margin-bottom: 15px;
+    color: var(--grey);
+  }
+  &__order-link {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--red);
+    transition: background-color var(--trans);
+    &:hover {
+      background-color: var(--red-hover);
+    }
+  }
+  &__info {
+    padding: 30px;
+  }
+  &__call-order {
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px dashed currentColor;
+    margin-bottom: 10px;
+    transition: all var(--trans);
+    &:hover {
+      color: var(--grey);
+    }
+  }
+  &__description {
+    color: var(--grey);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &__tel {
+    font-size: 16px;
+    transition: all var(--trans);
+    &:hover {
+      color: var(--grey);
+    }
+  }
+}

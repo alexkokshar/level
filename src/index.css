@@ -103,6 +103,7 @@ body {
 :root {
   --black: #000;
   --white: #fff;
+  --grey: #999;
   --blue: #007ebd;
   --red: #fc5239;
   --red-hover: #d83d26;
