@@ -1,0 +1,30 @@
+.intro {
+  &__swiper {
+    max-width: 100%;
+  }
+  &__item {
+    position: relative;
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  &__btn {
+    position: absolute;
+    top: 76%;
+    left: 10%;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: var(--red);
+}
+
+@media (max-width: 768px) {
+  .intro {
+    &__btn {
+      display: none;
+    }
+  }
+}
