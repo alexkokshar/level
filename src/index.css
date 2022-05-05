@@ -96,6 +96,10 @@ body {
   font-family: HelveticaRegular, Arial, Helvetica, sans-serif;
 }
 
+.subtitle {
+  font-size: 34px;
+}
+
 :root {
   --black: #000;
   --white: #fff;
