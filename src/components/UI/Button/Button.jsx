@@ -3,7 +3,11 @@ import React from 'react';
 import './Button.scss';
 
 function Button({ children }) {
-  return <a href="#/">{children}</a>;
+  return (
+    <a className="custom-button" href="#/">
+      {children}
+    </a>
+  );
 }
 
 export default Button;
