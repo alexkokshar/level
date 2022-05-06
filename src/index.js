@@ -11,6 +11,7 @@ import Delivery from './components/pages/Delivery/Delivery';
 import Faq from './components/pages/Faq/Faq';
 import Contacts from './components/pages/Contacts/Contacts';
 import Loyalty from './components/pages/Loyalty/Loyalty';
+import Certificate from './components/pages/Certificate/Certificate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         <Route path="/faq" element={<Faq />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/loyalty" element={<Loyalty />} />
+        <Route path="/certificate" element={<Certificate />} />
       </Route>
     </Routes>
   </BrowserRouter>
