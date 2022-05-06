@@ -1,0 +1,86 @@
+.footer {
+  background-color: #000;
+  padding: 50px 0;
+  color: #fff;
+  &__inner {
+  }
+  &__info {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  &__pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    a {
+      color: #fff;
+      transition: color var(--trans);
+      &:hover {
+        color: var(--green);
+      }
+    }
+  }
+  &__logo {
+    height: 80px;
+  }
+  &__socials {
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  &__social {
+    margin: 0 5px;
+  }
+  &__address {
+    grid-column: span 2;
+  }
+  &__download {
+  }
+  &__mobile {
+    display: flex;
+    align-items: center;
+  }
+  &__qr {
+    margin-right: 10px;
+  }
+  &__mobile-text {
+  }
+  &__mobile-link {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+  }
+  &__towns {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #999;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    &__info {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    &__info {
+      grid-template-columns: 1fr;
+    }
+    &__pages {
+      grid-row-gap: 25px;
+    }
+  }
+}
