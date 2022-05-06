@@ -1,0 +1,31 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s linear;
+
+  &.modal-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__body {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}
