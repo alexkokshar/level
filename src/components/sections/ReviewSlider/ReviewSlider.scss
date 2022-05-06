@@ -1,0 +1,110 @@
+.reviewslider {
+  background-color: #f1f1f1;
+  height: 450px;
+  border-radius: 25px;
+  position: relative;
+  &__descripiton {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 20px;
+    max-width: 275px;
+  }
+  & .swiper-slide:nth-child(1) .reviewslider__item {
+    background-image: url('../../../assets/images/about/slider-background-1.png');
+  }
+
+  & .swiper-slide:nth-child(2) .reviewslider__item {
+    background-image: url('../../../assets/images/about/slider-background-2.png');
+  }
+
+  & .swiper-slide:nth-child(3) .reviewslider__item {
+    background-image: url('../../../assets/images/about/slider-background-3.png');
+  }
+
+  & .swiper-slide:nth-child(4) .reviewslider__item {
+    background-image: url('../../../assets/images/about/slider-background-4.png');
+  }
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    top: 78%;
+    padding: 20px;
+    color: var(--black);
+  }
+
+  & .swiper-button-prev {
+    left: 32%;
+  }
+
+  & .swiper-button-next {
+    right: 54%;
+  }
+
+  &__item {
+    height: 450px;
+    padding-left: 47px;
+    padding-top: 130px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 83% 0;
+  }
+  &__name {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin: 40px 0;
+    line-height: 1.5;
+    max-width: 60%;
+  }
+  &__position {
+    color: var(--grey);
+  }
+}
+
+@media (max-width: 800px) {
+  .reviewslider {
+    height: auto;
+    min-height: 450px;
+    &__item {
+      background-size: 200px;
+      background-position: 84% bottom;
+      padding-bottom: 40px;
+    }
+    &__name {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .reviewslider {
+    &__descripiton {
+      left: 15px;
+    }
+    &__item {
+      padding-bottom: 450px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      top: 88%;
+      padding: 20px;
+      color: var(--black);
+    }
+
+    & .swiper-button-prev {
+      left: 2%;
+    }
+
+    & .swiper-button-next {
+      left: 15%;
+    }
+  }
+}
