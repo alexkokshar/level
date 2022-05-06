@@ -10,6 +10,7 @@ import Price from './components/pages/Price/Price';
 import Delivery from './components/pages/Delivery/Delivery';
 import Faq from './components/pages/Faq/Faq';
 import Contacts from './components/pages/Contacts/Contacts';
+import Loyalty from './components/pages/Loyalty/Loyalty';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path="/payment-and-delivery" element={<Delivery />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/loyalty" element={<Loyalty />} />
       </Route>
     </Routes>
   </BrowserRouter>
