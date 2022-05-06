@@ -1,0 +1,48 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+  }
+  &__item {
+    margin-right: 40px;
+    &:nth-child(1) {
+      grid-column: span 2;
+    }
+    &:nth-child(5) {
+      align-self: flex-end;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+  &__address {
+    font-style: normal;
+  }
+  &__text {
+  }
+  &__email {
+    color: var(--blue);
+  }
+  &__map {
+    flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__item {
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+    &__map {
+      margin-top: 30px;
+    }
+  }
+}
