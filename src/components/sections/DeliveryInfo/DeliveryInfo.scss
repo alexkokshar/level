@@ -1,0 +1,16 @@
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__column {
+    max-width: 290px;
+    margin: 15px;
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 23px;
+  }
+  &__text {
+    margin-bottom: 16px;
+  }
+}
