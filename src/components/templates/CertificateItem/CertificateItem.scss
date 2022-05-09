@@ -1,0 +1,69 @@
+.ticket {
+  max-width: 280px;
+  padding: 15px;
+  background-color: #f5e8e9;
+  &__descr {
+    font-size: 16px;
+    padding-top: 40px;
+    color: #6c5050;
+  }
+  &__program {
+    font-size: 38px;
+  }
+  &__calories {
+    color: #6c5050;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  &__selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__select {
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    transition: all var(--trans);
+    &.ticket__select-active {
+      background-color: var(--green);
+    }
+  }
+  &__days {
+    font-weight: 700;
+    font-size: 18px;
+    transition: all var(--trans);
+  }
+  &__price {
+    color: var(--red);
+    margin-top: 5px;
+    transition: all var(--trans);
+  }
+  &__select.ticket__select-active .ticket__days,
+  &__select.ticket__select-active .ticket__price {
+    color: #fff;
+  }
+  &__confirm {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ticket {
+    width: 280px;
+  }
+}
+
+@media (max-width: 624px) {
+  .ticket {
+    max-width: 280px;
+  }
+}
