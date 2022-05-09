@@ -1,0 +1,57 @@
+.price {
+  &__table {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+th,
+td {
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+tbody td:not(:first-child) {
+  font-family: HelveticaRegular, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+tbody td div:first-child {
+  transform: translateY(10px);
+  transition: all 0.3s linear;
+}
+
+tbody td:nth-child(n + 3) {
+  cursor: pointer;
+}
+
+tbody td:nth-child(n + 3):hover {
+  background-color: var(--green);
+  & div:first-child {
+    transform: translateY(0);
+  }
+  & div {
+    color: #fff;
+  }
+}
+
+tbody td div:last-child {
+  transform: translateY(30px);
+  transition: transform 0.3s linear;
+}
+
+tbody td:hover div:last-child {
+  transform: translateY(0);
+}
