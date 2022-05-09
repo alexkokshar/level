@@ -1,0 +1,30 @@
+.other {
+  &__link {
+    padding: 30px;
+    border-radius: 20px;
+    &:hover .other__program,
+    &:hover .other__calories {
+      color: var(--red);
+    }
+  }
+  &__hit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+  }
+  &__program {
+    transition: color var(--trans);
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  &__calories {
+    transition: color var(--trans);
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  &__calories-text {
+    color: var(--grey);
+  }
+}
