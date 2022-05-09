@@ -3,6 +3,11 @@ import React from 'react';
 import Container from '../../components/UI/Container/Container';
 import CertificateProcess from '../../components/sections/SertificateProcess/SertificateProcess';
 import CertificateItem from '../../components/templates/CertificateItem/CertificateItem';
+import OrderSidebar from '../../components/templates/OrderSidebar/OrderSidebar';
+import Accordion from '../../components/templates/Accordions/Accordion/Accordion';
+import CertificateValid from '../../components/templates/Accordions/Certificate';
+import HowToGetCertificate from '../../components/templates/Accordions/HowToGetCertificate';
+import HowToActivateCertificate from '../../components/templates/Accordions/HowToActivateCertificate';
 import bag from '../../assets/images/bag.png';
 import './Certificate.scss';
 
@@ -88,8 +93,27 @@ function Certificate() {
             </div>
           </div>
         </div>
-
         <CertificateProcess />
+
+        <div className="certificate__faq">
+          <h2 className="certificate__faq-title">Вопросы и ответы</h2>
+          <div className="certificate__faq-content">
+            <div className="certificate__faq-accordions">
+              <Accordion title="Сколько действует сертификат?" body={<CertificateValid />} />
+              <Accordion
+                title="Как мне получить сертификат после оформления заказа?"
+                body={<HowToGetCertificate />}
+              />
+              <Accordion
+                title="Как потом активировать сертификат?"
+                body={<HowToActivateCertificate />}
+              />
+            </div>
+            <div className="certificate__faq-sidebar">
+              <OrderSidebar />
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   );

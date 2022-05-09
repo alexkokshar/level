@@ -47,6 +47,23 @@
     font-size: 14px;
     line-height: 1.5;
   }
+  &__faq {
+    margin-top: 40px;
+  }
+  &__faq-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  &__faq-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__faq-accordions {
+    margin-right: 40px;
+    max-width: 900px;
+  }
+  &__faq-sidebar {
+  }
 }
 
 @media (max-width: 1024px) {
@@ -81,6 +98,19 @@
     }
     &__info {
       flex-direction: column;
+    }
+    &__faq-content {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__faq-accordions {
+      margin-bottom: 20px;
+    }
+    &__faq-sidebar {
+      margin: 0 auto;
+    }
+    &__faq-accordions {
+      margin-right: 0;
     }
   }
 }
