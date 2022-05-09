@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { noScroll } from '../../../helpers/noScroll';
 import Container from '../../UI/Container/Container';
 import './Header.scss';
 
@@ -8,6 +9,22 @@ import logo from '../../../assets/images/icons/logo.svg';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    noScroll();
+  };
+
+  const closeMenu = (e) => {
+    const elem = e.target;
+    if (
+      elem.getAttribute('class') === 'nav__program' ||
+      elem.getAttribute('class') === 'nav__page'
+    ) {
+      setIsMenuOpen(false);
+      noScroll();
+    }
+  };
 
   return (
     <header className="header">
@@ -19,7 +36,7 @@ function Header() {
             </Link>
             <button
               className={`header__burger ${isMenuOpen && 'header__burger-open'}`}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={toggleMenu}
             >
               <svg
                 width="25"
@@ -168,7 +185,7 @@ function Header() {
       <div className={`header__menu ${isMenuOpen && 'header__menu-open'}`}>
         <Container>
           <div className="nav">
-            <nav className="nav__inner">
+            <nav className="nav__inner" onClick={closeMenu}>
               <div className="nav__programs">
                 <div className="nav__text reg">Программы</div>
                 <Link className="nav__program" to="/hit">

@@ -18,7 +18,7 @@ import comboSmall from '../../../assets/images/intro/combo-small.png';
 
 function Intro() {
   return (
-    <Swiper pagination={true} modules={[Pagination]} className="intro__swiper">
+    <Swiper pagination={true} modules={[Pagination]} loop className="intro__swiper">
       <SwiperSlide>
         <div className="intro__item">
           <picture>
