@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
+import { ModalContext } from '../../../App';
 import './CertificateItem.scss';
 
 function CertificateItem({ item }) {
+  let { setIsModalOpen } = useContext(ModalContext);
+
   const [isActive, setIsActive] = useState(2);
   return (
     <div className="ticket" style={{ background: item.background }}>
@@ -25,7 +28,9 @@ function CertificateItem({ item }) {
           <div className="ticket__price">{item.secondPrice}</div>
         </button>
       </div>
-      <button className="ticket__confirm">Оформить</button>
+      <button className="ticket__confirm" onClick={() => setIsModalOpen(true)}>
+        Оформить
+      </button>
     </div>
   );
 }

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
+import { ModalContext } from '../../../App';
 import './OrderSidebar.scss';
 
 function OrderSidebar() {
+  const { setIsModalOpen } = useContext(ModalContext);
   return (
     <div className="sidebar">
       <div className="sidebar__order">
@@ -13,7 +15,9 @@ function OrderSidebar() {
         </a>
       </div>
       <div className="sidebar__info">
-        <button className="sidebar__call-order">Заказать звонок</button>
+        <button className="sidebar__call-order" onClick={() => setIsModalOpen(true)}>
+          Заказать звонок
+        </button>
         <div className="sidebar__description reg">Наш менеджер перезвонит в течение 5 минут</div>
         <a className="sidebar__tel" href="tel:88007758549">
           8 (800) 775-85-49

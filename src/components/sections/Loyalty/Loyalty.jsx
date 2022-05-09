@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
+import { ModalContext } from '../../../App';
 import cashback from '../../../assets/images/loyalty/cashback.jpg';
 import certificate from '../../../assets/images/loyalty/certificate.jpg';
 import referral from '../../../assets/images/loyalty/referral.png';
@@ -7,6 +8,7 @@ import referral from '../../../assets/images/loyalty/referral.png';
 import './Loyalty.scss';
 
 function Loyalty() {
+  const { setIsModalOpen } = useContext(ModalContext);
   return (
     <div className="loyalty">
       <h1 className="loyalty__title title">Программа лояльности</h1>
@@ -19,7 +21,9 @@ function Loyalty() {
               Оплачивай ими до 50% стоимости следующего заказа.
             </div>
           </div>
-          <button className="loyalty__btn">Подробнее</button>
+          <button className="loyalty__btn" onClick={() => setIsModalOpen(true)}>
+            Подробнее
+          </button>
         </li>
         <li className="loyalty__item">
           <div className="loyalty__info">
@@ -30,7 +34,9 @@ function Loyalty() {
             </div>
             <div className="loyalty__text reg">Заказать можно в чате.</div>
           </div>
-          <button className="loyalty__btn">Подробнее</button>
+          <button className="loyalty__btn" onClick={() => setIsModalOpen(true)}>
+            Подробнее
+          </button>
         </li>
         <li className="loyalty__item">
           <div className="loyalty__info">
@@ -42,7 +48,9 @@ function Loyalty() {
               Когда он ею воспользуется, мы начислим тебе 1500 бонусов.
             </div>
           </div>
-          <button className="loyalty__btn">Подробнее</button>
+          <button className="loyalty__btn" onClick={() => setIsModalOpen(true)}>
+            Подробнее
+          </button>
         </li>
       </ul>
     </div>

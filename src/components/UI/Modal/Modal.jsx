@@ -3,7 +3,7 @@ import React from 'react';
 import closeIcon from '../../../assets/images/icons/close.svg';
 import './Modal.scss';
 
-function Modal({ isModalOpen, setIsModalOpen, children }) {
+function Modal({ isModalOpen, setIsModalOpen }) {
   return (
     <div className={`modal ${isModalOpen && 'modal-open'}`} onClick={() => setIsModalOpen(false)}>
       <div className="modal__body" onClick={(e) => e.stopPropagation()}>
