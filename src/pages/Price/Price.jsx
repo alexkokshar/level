@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from '../../UI/Container/Container';
-import OrderProcess from '../../sections/OrderProcess/OrderProcess';
+import Container from '../../components/UI/Container/Container';
+import OrderProcess from '../../components/sections/OrderProcess/OrderProcess';
 import './Price.scss';
 
 function Price() {

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from '../../UI/Container/Container';
-import LoyaltySection from '../../sections/Loyalty/Loyalty';
+import Container from '../../components/UI/Container/Container';
+import LoyaltySection from '../../components/sections/Loyalty/Loyalty';
 import './Loyalty.scss';
 
 function Loyalty() {

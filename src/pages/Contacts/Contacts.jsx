@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Container from '../../UI/Container/Container';
+import Container from '../../components/UI/Container/Container';
 import './Contacts.scss';
 
 function Contacts() {
@@ -67,6 +67,7 @@ function Contacts() {
               width="100%"
               height="450"
               frameborder="0"
+              title="yandex map"
             ></iframe>
           </div>
         </div>

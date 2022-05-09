@@ -4,14 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import Home from './components/pages/Home/Home';
-import About from './components/pages/About/About';
-import Price from './components/pages/Price/Price';
-import Delivery from './components/pages/Delivery/Delivery';
-import Faq from './components/pages/Faq/Faq';
-import Contacts from './components/pages/Contacts/Contacts';
-import Loyalty from './components/pages/Loyalty/Loyalty';
-import Certificate from './components/pages/Certificate/Certificate';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Price from './pages/Price/Price';
+import Delivery from './pages/Delivery/Delivery';
+import Faq from './pages/Faq/Faq';
+import Contacts from './pages/Contacts/Contacts';
+import Loyalty from './pages/Loyalty/Loyalty';
+import Certificate from './pages/Certificate/Certificate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

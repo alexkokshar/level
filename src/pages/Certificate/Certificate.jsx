@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from '../../UI/Container/Container';
-import CertificateProcess from '../../sections/SertificateProcess/SertificateProcess';
+import Container from '../../components/UI/Container/Container';
+import CertificateProcess from '../../components/sections/SertificateProcess/SertificateProcess';
 import './Certificate.scss';
 
 function Certificate() {

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Container from '../../UI/Container/Container';
-import DeliveryInfo from '../../sections/DeliveryInfo/DeliveryInfo';
-import DeliveryFaqs from '../../sections/DeliveryFaqs/DeliveryFaqs';
+import Container from '../../components/UI/Container/Container';
+import DeliveryInfo from '../../components/sections/DeliveryInfo/DeliveryInfo';
+import DeliveryFaqs from '../../components/sections/DeliveryFaqs/DeliveryFaqs';
 import './Delivery.scss';
 
 function Delivery() {
