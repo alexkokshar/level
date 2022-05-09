@@ -13,7 +13,19 @@ function Modal({ isModalOpen, setIsModalOpen, children }) {
           </button>
         </div>
 
-        <div className="modal__content">{children}</div>
+        <div className="modal__content">
+          <div className="modal__title">Оформление заказа</div>
+          <form className="modal__form">
+            <label className="reg">
+              +7
+              <input type="tel" name="tel" />
+            </label>
+            <p className="modal__privacy reg">
+              Нажимая на кнопку "Отправить", я соглашаюсь с условиями политики конфиденциальности
+            </p>
+            <button className="modal__send reg">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
   );
