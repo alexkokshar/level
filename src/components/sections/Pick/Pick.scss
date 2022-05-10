@@ -1,0 +1,65 @@
+.pick {
+  margin: 50px 0;
+  max-width: 850px;
+  &__title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  &__tabs {
+    display: flex;
+  }
+  &__tab {
+    width: 12.5%;
+    text-align: center;
+    border: 1px solid #edf3f5;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  &__tab-name {
+    margin-bottom: 5px;
+  }
+  &__tab-calories {
+    height: 22px;
+  }
+}
+
+.tab-hit {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #80bc46;
+    background-color: #f9fff3;
+  }
+}
+.tab-detox {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #ffbc5a;
+    background-color: #fcf6eb;
+  }
+}
+.tab-losing {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #80bc46;
+    background-color: #f0f5f0;
+  }
+}
+.tab-balans {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #68d8f9;
+    background-color: #ecf2f4;
+  }
+}
+.tab-increase {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #f1484c;
+    background-color: #f5f0f2;
+  }
+}

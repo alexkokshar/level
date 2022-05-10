@@ -1,0 +1,77 @@
+.total {
+  max-width: 380px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background-color: #ddd;
+  &__selects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__select {
+    flex-basis: 50%;
+    padding: 8px 10px 8px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color var(--trans);
+    border: 1px solid #ebebeb;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    &.total-active {
+      background-color: var(--green);
+      .total__price,
+      .total__days {
+        color: #fff;
+      }
+    }
+  }
+  &__price {
+    color: var(--red);
+    margin-bottom: 5px;
+  }
+  &__days {
+  }
+  &__details {
+    flex: 1;
+    margin-top: 30px;
+  }
+  &__dishes {
+    font-size: 18px;
+  }
+  &__delivery {
+    margin-top: 10px;
+    color: var(--green);
+  }
+  &__sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__sum-text {
+    font-size: 18px;
+  }
+  &__sum-num {
+    font-size: 20px;
+  }
+  &__cashback {
+    display: inline;
+    text-align: right;
+    color: var(--blue);
+  }
+  &__order {
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color var(--trans);
+    &:hover {
+      background-color: var(--green);
+    }
+  }
+}
