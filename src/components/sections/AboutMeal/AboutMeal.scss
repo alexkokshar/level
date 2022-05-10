@@ -1,0 +1,77 @@
+.aboutmeal {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child {
+      margin-top: 50px;
+    }
+  }
+  &__img {
+    max-width: 50%;
+  }
+  &__info {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__description {
+    font-size: 14px;
+    color: var(--grey);
+    margin: 12px 0 26px;
+  }
+  &__text {
+    line-height: 1.5;
+  }
+  &__details {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__advice {
+    &:last-child {
+      color: var(--grey);
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutmeal {
+    &__info {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutmeal {
+    &__item {
+      flex-direction: column;
+      &:first-child .aboutmeal__img {
+        order: 1;
+      }
+    }
+    &__img {
+      margin-top: 30px;
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutmeal {
+    &__info {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
