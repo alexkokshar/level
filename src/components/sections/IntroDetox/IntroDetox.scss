@@ -1,0 +1,60 @@
+.introdetox {
+  background-image: url('../../../assets/images/detox/intro-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  &__inner {
+  }
+  &__title {
+    padding-top: 150px;
+    font-size: 67px;
+  }
+  &__text {
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    line-height: 1.4;
+  }
+  &__link {
+    width: 200px;
+    color: #fff;
+    background-color: var(--red);
+    padding: 20px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    transition: background-color var(--trans);
+    &:hover {
+      background-color: var(--red-hover);
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .introdetox {
+    &__title {
+      font-size: 56px;
+    }
+    &__text {
+      font-size: 33px;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .introdetox {
+    height: 750px;
+    &__title {
+      font-size: 42px;
+      padding-top: 70px;
+    }
+    &__text {
+      font-size: 33px;
+      font-size: 21px;
+    }
+  }
+}
