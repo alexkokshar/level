@@ -1,0 +1,46 @@
+.pickslider {
+  max-width: 850px;
+  padding: 30px 50px;
+  &__inner {
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__name {
+    font-size: 22px;
+  }
+  &__description {
+    max-width: 540px;
+    color: var(--grey);
+  }
+}
+
+.days-slider {
+  &__text {
+    margin-bottom: 30px;
+  }
+}
+
+.swiper-button-prev {
+  background-image: url('../../../../assets/images/programs/left_arrow.svg');
+  background-repeat: no-repeat;
+  right: 295px;
+  left: auto;
+  top: 9%;
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  background-image: url('../../../../assets/images/programs/right_arrow.svg');
+  background-repeat: no-repeat;
+  width: 34px;
+  right: 0;
+  top: 6%;
+  &::after {
+    display: none;
+  }
+}

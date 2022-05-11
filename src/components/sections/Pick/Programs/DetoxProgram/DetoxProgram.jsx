@@ -1,12 +1,16 @@
 import React from 'react';
 
+import { detoxInfoData } from '../../../../../data/DetoxProgramData';
+import { detoxSliderData } from '../../../../../data/DetoxProgramData';
 import { detoxTotalData } from '../../../../../data/ProgramsData';
+import PickSlider from '../../PickSlider/PickSlider';
 import Total from '../../Total/Total';
 import './DetoxProgram.scss';
 
 function DetoxProgram() {
   return (
-    <div>
+    <div className="program-box">
+      <PickSlider data={detoxInfoData} info={detoxSliderData} />
       <Total data={detoxTotalData} meals="8 напитков" />
     </div>
   );

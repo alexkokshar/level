@@ -1,0 +1,36 @@
+.picktab {
+  display: flex;
+  &__body {
+    max-width: 330px;
+  }
+  &__big-img {
+    max-width: 330px;
+    max-height: 242px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__info {
+    margin-top: 40px;
+  }
+  &__meal {
+    margin-bottom: 20px;
+  }
+  &__text {
+  }
+  &__tabs {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  &__tab {
+    cursor: pointer;
+  }
+  &__small-img {
+    max-width: 91px;
+    max-height: 70px;
+  }
+}
