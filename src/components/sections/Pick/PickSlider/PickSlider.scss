@@ -1,5 +1,6 @@
 .pickslider {
   max-width: 850px;
+  min-height: 550px;
   padding: 30px 50px;
   &__inner {
   }
@@ -19,6 +20,7 @@
 
 .days-slider {
   &__text {
+    padding-top: 10px;
     margin-bottom: 30px;
   }
 }
@@ -42,5 +44,43 @@
   top: 6%;
   &::after {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pickslider {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 790px) {
+  .pickslider {
+    padding: 30px 15px;
+    &__info {
+      justify-content: center;
+    }
+    &__description {
+      display: none;
+    }
+  }
+  .days-slider {
+    &__text {
+      padding-left: 30px;
+      padding-right: 40px;
+      text-align: center;
+    }
+  }
+  .swiper-button-prev {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  .swiper-button-prev {
+    top: 36px;
+  }
+  .swiper-button-next {
+    top: 24px;
   }
 }

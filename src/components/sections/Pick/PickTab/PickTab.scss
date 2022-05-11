@@ -34,3 +34,41 @@
     max-height: 70px;
   }
 }
+
+@media (max-width: 790px) {
+  .picktab {
+    &__tabs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .picktab {
+    flex-direction: column;
+    align-items: center;
+    &__tabs {
+      align-self: auto;
+      margin-left: 0;
+      margin-top: 0;
+      justify-items: center;
+      width: auto;
+    }
+    &__info {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    &__meal,
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .picktab {
+    &__big-img {
+      max-width: 100%;
+    }
+  }
+}

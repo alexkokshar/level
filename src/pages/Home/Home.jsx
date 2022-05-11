@@ -16,7 +16,9 @@ function Home() {
       <Container>
         <Intro />
         <WorkFlow />
-        <Pick />
+      </Container>
+      <Pick />
+      <Container>
         <OrderProcess />
         <Production />
         <InstaReview />

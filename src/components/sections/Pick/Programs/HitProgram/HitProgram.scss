@@ -1,3 +1,10 @@
 .program-box {
   display: flex;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .program-box {
+    display: block;
+  }
 }

@@ -1,12 +1,15 @@
 .pick {
-  margin: 50px 0;
-  max-width: 850px;
+  margin: 50px auto;
+  max-width: 1200px;
+
   &__title {
     font-size: 34px;
     margin-bottom: 40px;
+    margin-left: 15px;
   }
   &__tabs {
     display: flex;
+    max-width: 850px;
   }
   &__tab {
     width: 12.5%;
@@ -61,5 +64,24 @@
     border: none;
     border-top: 3px solid #f1484c;
     background-color: #f5f0f2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pick {
+    &__tabs {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .pick {
+    &__tabs {
+      flex-wrap: wrap;
+    }
+    &__tab {
+      width: 25%;
+    }
   }
 }

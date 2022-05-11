@@ -1,10 +1,9 @@
 .total {
-  min-width: 380px;
-  height: 550px;
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
   background-color: #ddd;
+  flex: 1;
   &__selects {
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +71,16 @@
     transition: background-color var(--trans);
     &:hover {
       background-color: var(--green);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .total {
+    max-width: 850px;
+    margin: 0 auto;
+    &__sum {
+      margin-top: 30px;
     }
   }
 }
