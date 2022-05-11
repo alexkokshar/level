@@ -38,14 +38,8 @@
     }
     &__text {
       font-size: 14px;
-    }
-  }
-}
-
-@media (max-width: 390px) {
-  .workflow {
-    &__list {
-      grid-template-columns: 1fr;
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 }
