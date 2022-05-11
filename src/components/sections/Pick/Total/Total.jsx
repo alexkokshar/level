@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 
+import { ModalContext } from '../../../../App';
 import './Total.scss';
 
 function Total({ data, meals }) {
   const [activeSelect, setActiveSelect] = useState(0);
+  const { setIsModalOpen } = useContext(ModalContext);
 
   const { price, days } = data[activeSelect];
   const totalPrice = parseInt(price) * parseInt(days);
@@ -34,7 +36,9 @@ function Total({ data, meals }) {
         <div className="total__sum-num">{totalPrice} ₽</div>
       </div>
       <div className="total__cashback reg">{cashback} ₽ вернем на бонусный счет</div>
-      <button className="total__order">Оформить заказ</button>
+      <button className="total__order" onClick={() => setIsModalOpen(true)}>
+        Оформить заказ
+      </button>
     </div>
   );
 }
