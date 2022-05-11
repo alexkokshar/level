@@ -1,0 +1,55 @@
+.pick {
+  margin: 50px auto;
+  max-width: 1200px;
+
+  &__title {
+    font-size: 34px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+  }
+  &__tabs {
+    display: flex;
+    max-width: 850px;
+  }
+  &__tab {
+    width: 12.5%;
+    text-align: center;
+    border: 1px solid #edf3f5;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  &__tab-name {
+    margin-bottom: 5px;
+  }
+  &__tab-calories {
+    height: 22px;
+  }
+}
+
+.tab-increase {
+  &:hover,
+  &.tab-active {
+    border: none;
+    border-top: 3px solid #f1484c;
+    background-color: #f5f0f2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pick {
+    &__tabs {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .pick {
+    &__tabs {
+      flex-wrap: wrap;
+    }
+    &__tab {
+      width: 25%;
+    }
+  }
+}
