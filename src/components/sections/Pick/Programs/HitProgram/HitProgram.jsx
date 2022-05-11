@@ -9,7 +9,7 @@ import './HitProgram.scss';
 
 function HitProgram() {
   return (
-    <div className="program-box">
+    <div className="program-box" id="pick">
       <PickSlider data={hitInfoData} info={hitSliderData} />
       <Total data={hitTotalData} meals="4 блюда" />
     </div>

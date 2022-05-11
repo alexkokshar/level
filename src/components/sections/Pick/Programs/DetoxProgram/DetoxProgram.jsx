@@ -9,7 +9,7 @@ import './DetoxProgram.scss';
 
 function DetoxProgram() {
   return (
-    <div className="program-box">
+    <div className="program-box" id="pick">
       <PickSlider data={detoxInfoData} info={detoxSliderData} />
       <Total data={detoxTotalData} meals="8 напитков" />
     </div>

@@ -8,7 +8,7 @@ function Pick() {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <div className="pick">
+    <div className="pick" id="pick">
       <h2 className="pick__title">Выберите программу</h2>
       <div className="pick__tabs">
         <div

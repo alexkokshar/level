@@ -15,6 +15,15 @@
     position: absolute;
     top: 76%;
     left: 10%;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background-color: var(--red);
+    transition: background-color var(--trans);
+    &:hover {
+      background-color: var(--red-hover);
+    }
   }
 }
 .swiper-pagination-bullet-active {

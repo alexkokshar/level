@@ -12,7 +12,7 @@ function GetStarted() {
           <div className="getstarted__text">Промокод 10% на первый заказ</div>
           <div className="getstarted__order">
             <div className="getstarted__promocode">EASY</div>
-            <a href="" className="getstarted__link">
+            <a href="#pick" className="getstarted__link">
               Заказать
             </a>
           </div>

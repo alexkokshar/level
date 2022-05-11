@@ -9,7 +9,7 @@ import './Balance2000.scss';
 
 function Balance2000() {
   return (
-    <div className="program-box">
+    <div className="program-box" id="pick">
       <PickSlider data={balance2000InfoData} info={balance2000SliderData} />
       <Total data={balance2000TotalData} meals="6 блюд" />
     </div>

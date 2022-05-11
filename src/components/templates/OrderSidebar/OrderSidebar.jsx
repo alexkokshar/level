@@ -10,7 +10,7 @@ function OrderSidebar() {
       <div className="sidebar__order">
         <div className="sidebar__order-title">Заказать еду легко</div>
         <div className="sidebar__order-text reg">Выбирай программу и достигай цели</div>
-        <a href="#/" className="sidebar__order-link">
+        <a href="#pick" className="sidebar__order-link">
           Оформить заказ
         </a>
       </div>

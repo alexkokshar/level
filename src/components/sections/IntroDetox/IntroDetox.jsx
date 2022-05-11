@@ -13,7 +13,7 @@ function IntroDetox() {
             <div className="introdetox__text">
               Очищение и легкость. 8 бутылочек соков и смузи в день
             </div>
-            <a href="#/" className="introdetox__link">
+            <a href="#pick" className="introdetox__link">
               Попробовать
             </a>
           </div>

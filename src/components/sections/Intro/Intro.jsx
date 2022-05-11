@@ -26,9 +26,9 @@ function Intro() {
             <source media="(max-width: 768px)" srcSet={nutritionSmall} />
             <img className="intro__img" src={nutrition} alt="nutrition" />
           </picture>
-          <div className="intro__btn">
-            <Button>Заказать</Button>
-          </div>
+          <a href="#pick" className="intro__btn">
+            Заказать
+          </a>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -38,9 +38,9 @@ function Intro() {
             <source media="(max-width: 768px)" srcSet={detoxSmall} />
             <img className="intro__img" src={detox} alt="nutrition" />
           </picture>
-          <div className="intro__btn">
-            <Button>Заказать</Button>
-          </div>
+          <a href="#pick" className="intro__btn">
+            Заказать
+          </a>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -50,9 +50,9 @@ function Intro() {
             <source media="(max-width: 768px)" srcSet={fitstarsSmall} />
             <img className="intro__img" src={fitstars} alt="nutrition" />
           </picture>
-          <div className="intro__btn">
-            <Button>Заказать</Button>
-          </div>
+          <a href="#pick" className="intro__btn">
+            Заказать
+          </a>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -62,9 +62,9 @@ function Intro() {
             <source media="(max-width: 768px)" srcSet={comboSmall} />
             <img className="intro__img" src={combo} alt="nutrition" />
           </picture>
-          <div className="intro__btn">
-            <Button>Заказать</Button>
-          </div>
+          <a href="#pick" className="intro__btn">
+            Заказать
+          </a>
         </div>
       </SwiperSlide>
     </Swiper>
