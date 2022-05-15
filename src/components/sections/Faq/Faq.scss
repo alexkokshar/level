@@ -1,7 +1,5 @@
 .faq {
   margin: 50px 0;
-  &__title {
-  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -35,16 +33,14 @@
   }
   &__tab-name {
     margin-top: 20px;
-  }
-  &__accordions {
+    font-weight: 700;
+    font-size: 14px;
   }
   &__item {
     display: none;
     &.faq__item-active {
       display: block;
     }
-  }
-  &__order {
   }
 }
 
