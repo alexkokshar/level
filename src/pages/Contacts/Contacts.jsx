@@ -66,7 +66,7 @@ function Contacts() {
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa5b763bab6d3210b825a71d726ab5df71c9277256c3816119623fd2b5d35ea37&amp;source=constructor"
               width="100%"
               height="450"
-              frameborder="0"
+              frameBorder="0"
               title="yandex map"
             ></iframe>
           </div>
