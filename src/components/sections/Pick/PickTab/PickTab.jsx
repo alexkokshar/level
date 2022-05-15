@@ -19,7 +19,12 @@ function PickTab({ data }) {
       <div className="picktab__tabs">
         {data.map((item) => (
           <div key={item.id} className="picktab__tab" onClick={() => setActiveTab(item.id)}>
-            <img src={item.pic} alt="Контейнер с едой" className="picktab__small-img" />
+            <img
+              src={item.pic}
+              alt="Контейнер с едой"
+              className="picktab__small-img"
+              style={{ opacity: item.id === activeTab && '0.4' }}
+            />
           </div>
         ))}
       </div>

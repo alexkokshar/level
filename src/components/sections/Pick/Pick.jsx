@@ -11,7 +11,7 @@ import Increase3500 from './Programs/Increase3500/Increase3500';
 import './Pick.scss';
 
 function Pick() {
-  const [activeTab, setActiveTab] = useState(2);
+  const [activeTab, setActiveTab] = useState(6);
 
   return (
     <div className="pick" id="pick">
