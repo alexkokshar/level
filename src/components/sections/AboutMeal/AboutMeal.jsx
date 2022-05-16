@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Container from '../../UI/Container/Container';
-import aboutPictire from '../../../assets/images/losing/about-1.png';
-import aboutPictire2 from '../../../assets/images/losing/about-2.png';
+import aboutPictire from '../../../assets/images/losing/about-1.jpg';
+import aboutPictire2 from '../../../assets/images/losing/about-2.jpg';
 import './AboutMeal.scss';
 
 function AboutMeal() {

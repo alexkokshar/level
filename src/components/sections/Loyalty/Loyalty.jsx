@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { ModalContext } from '../../../App';
 import cashback from '../../../assets/images/loyalty/cashback.jpg';
 import certificate from '../../../assets/images/loyalty/certificate.jpg';
-import referral from '../../../assets/images/loyalty/referral.png';
+import referral from '../../../assets/images/loyalty/referral.jpg';
 
 import './Loyalty.scss';
 

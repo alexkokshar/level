@@ -5,16 +5,15 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import Button from '../../UI/Button/Button';
 import './Intro.scss';
-import nutrition from '../../../assets/images/intro/nutrition.png';
-import nutritionSmall from '../../../assets/images/intro/nutrition-small.png';
-import detox from '../../../assets/images/intro/detox.png';
-import detoxSmall from '../../../assets/images/intro/detox-small.png';
-import fitstars from '../../../assets/images/intro/fitstars.png';
-import fitstarsSmall from '../../../assets/images/intro/fitstars-small.png';
-import combo from '../../../assets/images/intro/combo.png';
-import comboSmall from '../../../assets/images/intro/combo-small.png';
+import nutrition from '../../../assets/images/intro/nutrition.jpg';
+import nutritionSmall from '../../../assets/images/intro/nutrition-small.jpg';
+import detox from '../../../assets/images/intro/detox.jpg';
+import detoxSmall from '../../../assets/images/intro/detox-small.jpg';
+import fitstars from '../../../assets/images/intro/fitstars.jpg';
+import fitstarsSmall from '../../../assets/images/intro/fitstars-small.jpg';
+import combo from '../../../assets/images/intro/combo.jpg';
+import comboSmall from '../../../assets/images/intro/combo-small.jpg';
 
 function Intro() {
   return (

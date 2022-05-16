@@ -8,7 +8,7 @@ import Accordion from '../../components/templates/Accordions/Accordion/Accordion
 import CertificateValid from '../../components/templates/Accordions/Certificate';
 import HowToGetCertificate from '../../components/templates/Accordions/HowToGetCertificate';
 import HowToActivateCertificate from '../../components/templates/Accordions/HowToActivateCertificate';
-import bag from '../../assets/images/bag.png';
+import bag from '../../assets/images/bag.jpg';
 import './Certificate.scss';
 
 const data = [
