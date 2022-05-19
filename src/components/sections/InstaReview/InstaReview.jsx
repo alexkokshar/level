@@ -7,16 +7,77 @@ import 'swiper/css/pagination';
 
 import instaLogo from '../../../assets/images/icons/Instagram.svg';
 import rightArrow from '../../../assets/images/icons/black_arrow_right.svg';
-import instaPost1 from '../../../assets/images/instareview/1.jpg';
-import instaPost2 from '../../../assets/images/instareview/2.jpg';
-import instaPost3 from '../../../assets/images/instareview/3.jpg';
-import instaPost4 from '../../../assets/images/instareview/4.jpg';
-import instaPost5 from '../../../assets/images/instareview/5.jpg';
-import instaPost6 from '../../../assets/images/instareview/6.jpg';
-import instaPost7 from '../../../assets/images/instareview/7.jpg';
-import instaPost8 from '../../../assets/images/instareview/8.jpg';
-import instaPost9 from '../../../assets/images/instareview/9.jpg';
-import instaPost10 from '../../../assets/images/instareview/10.jpg';
+
+import post1_jpg from '../../../assets/images/instareview/post1.jpg';
+import post1_jpg2x from '../../../assets/images/instareview/post1@2x.jpg';
+import post1_jpg3x from '../../../assets/images/instareview/post1@3x.jpg';
+import post1_webp from '../../../assets/images/instareview/post1.webp';
+import post1_webp2x from '../../../assets/images/instareview/post1@2x.webp';
+import post1_webp3x from '../../../assets/images/instareview/post1@3x.webp';
+
+import post2_jpg from '../../../assets/images/instareview/post2.jpg';
+import post2_jpg2x from '../../../assets/images/instareview/post2@2x.jpg';
+import post2_jpg3x from '../../../assets/images/instareview/post2@3x.jpg';
+import post2_webp from '../../../assets/images/instareview/post2.webp';
+import post2_webp2x from '../../../assets/images/instareview/post2@2x.webp';
+import post2_webp3x from '../../../assets/images/instareview/post2@3x.webp';
+
+import post3_jpg from '../../../assets/images/instareview/post3.jpg';
+import post3_jpg2x from '../../../assets/images/instareview/post3@2x.jpg';
+import post3_jpg3x from '../../../assets/images/instareview/post3@3x.jpg';
+import post3_webp from '../../../assets/images/instareview/post3.webp';
+import post3_webp2x from '../../../assets/images/instareview/post3@2x.webp';
+import post3_webp3x from '../../../assets/images/instareview/post3@3x.webp';
+
+import post4_jpg from '../../../assets/images/instareview/post4.jpg';
+import post4_jpg2x from '../../../assets/images/instareview/post4@2x.jpg';
+import post4_jpg3x from '../../../assets/images/instareview/post4@3x.jpg';
+import post4_webp from '../../../assets/images/instareview/post4.webp';
+import post4_webp2x from '../../../assets/images/instareview/post4@2x.webp';
+import post4_webp3x from '../../../assets/images/instareview/post4@3x.webp';
+
+import post5_jpg from '../../../assets/images/instareview/post5.jpg';
+import post5_jpg2x from '../../../assets/images/instareview/post5@2x.jpg';
+import post5_jpg3x from '../../../assets/images/instareview/post5@3x.jpg';
+import post5_webp from '../../../assets/images/instareview/post5.webp';
+import post5_webp2x from '../../../assets/images/instareview/post5@2x.webp';
+import post5_webp3x from '../../../assets/images/instareview/post5@3x.webp';
+
+import post6_jpg from '../../../assets/images/instareview/post6.jpg';
+import post6_jpg2x from '../../../assets/images/instareview/post6@2x.jpg';
+import post6_jpg3x from '../../../assets/images/instareview/post6@3x.jpg';
+import post6_webp from '../../../assets/images/instareview/post6.webp';
+import post6_webp2x from '../../../assets/images/instareview/post6@2x.webp';
+import post6_webp3x from '../../../assets/images/instareview/post6@3x.webp';
+
+import post7_jpg from '../../../assets/images/instareview/post7.jpg';
+import post7_jpg2x from '../../../assets/images/instareview/post7@2x.jpg';
+import post7_jpg3x from '../../../assets/images/instareview/post7@3x.jpg';
+import post7_webp from '../../../assets/images/instareview/post7.webp';
+import post7_webp2x from '../../../assets/images/instareview/post7@2x.webp';
+import post7_webp3x from '../../../assets/images/instareview/post7@3x.webp';
+
+import post8_jpg from '../../../assets/images/instareview/post8.jpg';
+import post8_jpg2x from '../../../assets/images/instareview/post8@2x.jpg';
+import post8_jpg3x from '../../../assets/images/instareview/post8@3x.jpg';
+import post8_webp from '../../../assets/images/instareview/post8.webp';
+import post8_webp2x from '../../../assets/images/instareview/post8@2x.webp';
+import post8_webp3x from '../../../assets/images/instareview/post8@3x.webp';
+
+import post9_jpg from '../../../assets/images/instareview/post9.jpg';
+import post9_jpg2x from '../../../assets/images/instareview/post9@2x.jpg';
+import post9_jpg3x from '../../../assets/images/instareview/post9@3x.jpg';
+import post9_webp from '../../../assets/images/instareview/post9.webp';
+import post9_webp2x from '../../../assets/images/instareview/post9@2x.webp';
+import post9_webp3x from '../../../assets/images/instareview/post9@3x.webp';
+
+import post10_jpg from '../../../assets/images/instareview/post10.jpg';
+import post10_jpg2x from '../../../assets/images/instareview/post10@2x.jpg';
+import post10_jpg3x from '../../../assets/images/instareview/post10@3x.jpg';
+import post10_webp from '../../../assets/images/instareview/post10.webp';
+import post10_webp2x from '../../../assets/images/instareview/post10@2x.webp';
+import post10_webp3x from '../../../assets/images/instareview/post10@3x.webp';
+
 import './InstaReview.scss';
 
 function InstaReview() {
@@ -56,52 +117,162 @@ function InstaReview() {
       >
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-Zrh36J-Nv/">
-            <img className="insta__img" src={instaPost1} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post1_webp} 1x, ${post1_webp2x} 2x, ${post1_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post1_jpg}
+                srcSet={`${post1_jpg2x} 2x, ${post1_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-KjAT-gutD/">
-            <img className="insta__img" src={instaPost2} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post2_webp} 1x, ${post2_webp2x} 2x, ${post2_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post2_jpg}
+                srcSet={`${post2_jpg2x} 2x, ${post2_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-5WST2H9Ov/">
-            <img className="insta__img" src={instaPost3} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post3_webp} 1x, ${post3_webp2x} 2x, ${post3_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post3_jpg}
+                srcSet={`${post3_jpg2x} 2x, ${post3_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-Humk0hgd2/">
-            <img className="insta__img" src={instaPost4} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post4_webp} 1x, ${post4_webp2x} 2x, ${post4_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post4_jpg}
+                srcSet={`${post4_jpg2x} 2x, ${post4_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-IZdQQFmN5/">
-            <img className="insta__img" src={instaPost5} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post5_webp} 1x, ${post5_webp2x} 2x, ${post5_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post5_jpg}
+                srcSet={`${post5_jpg2x} 2x, ${post5_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B-HxAivhIdO/">
-            <img className="insta__img" src={instaPost6} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post6_webp} 1x, ${post6_webp2x} 2x, ${post6_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post6_jpg}
+                srcSet={`${post6_jpg2x} 2x, ${post6_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B9g-7ptAxA5/">
-            <img className="insta__img" src={instaPost7} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post7_webp} 1x, ${post7_webp2x} 2x, ${post7_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post7_jpg}
+                srcSet={`${post7_jpg2x} 2x, ${post7_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B9Ruz9bI6CI/">
-            <img className="insta__img" src={instaPost8} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post8_webp} 1x, ${post8_webp2x} 2x, ${post8_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post8_jpg}
+                srcSet={`${post8_jpg2x} 2x, ${post8_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B9KL-z3nlMH/">
-            <img className="insta__img" src={instaPost9} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post9_webp} 1x, ${post9_webp2x} 2x, ${post9_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post9_jpg}
+                srcSet={`${post9_jpg2x} 2x, ${post9_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://www.instagram.com/p/B9EG74hpO30/">
-            <img className="insta__img" src={instaPost10} alt="instagram post" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${post10_webp} 1x, ${post10_webp2x} 2x, ${post10_webp3x} 3x`}
+              />
+              <img
+                className="insta__img"
+                src={post10_jpg}
+                srcSet={`${post10_jpg2x} 2x, ${post10_jpg3x} 3x`}
+                alt="instagram post"
+              />
+            </picture>
           </a>
         </SwiperSlide>
       </Swiper>
