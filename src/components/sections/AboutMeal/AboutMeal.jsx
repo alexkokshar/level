@@ -1,8 +1,21 @@
 import React from 'react';
 
 import Container from '../../UI/Container/Container';
-import aboutPictire from '../../../assets/images/losing/about-1.jpg';
-import aboutPictire2 from '../../../assets/images/losing/about-2.jpg';
+
+import woman_jpg from '../../../assets/images/losing/woman-with-meal.jpg';
+import woman_jpg2x from '../../../assets/images/losing/woman-with-meal@2x.jpg';
+import woman_jpg3x from '../../../assets/images/losing/woman-with-meal@3x.jpg';
+import woman_webp from '../../../assets/images/losing/woman-with-meal.webp';
+import woman_webp2x from '../../../assets/images/losing/woman-with-meal@2x.webp';
+import woman_webp3x from '../../../assets/images/losing/woman-with-meal@3x.webp';
+
+import containers_jpg from '../../../assets/images/losing/containers-with-meal.jpg';
+import containers_jpg2x from '../../../assets/images/losing/containers-with-meal@2x.jpg';
+import containers_jpg3x from '../../../assets/images/losing/containers-with-meal@3x.jpg';
+import containers_webp from '../../../assets/images/losing/containers-with-meal.webp';
+import containers_webp2x from '../../../assets/images/losing/containers-with-meal@2x.webp';
+import containers_webp3x from '../../../assets/images/losing/containers-with-meal@3x.webp';
+
 import './AboutMeal.scss';
 
 function AboutMeal() {
@@ -11,11 +24,16 @@ function AboutMeal() {
       <Container>
         <div className="aboutmeal__inner">
           <div className="aboutmeal__item">
-            <img
-              src={aboutPictire}
-              alt="Девушка с контейнером для приема пищи"
-              className="aboutmeal__img"
-            />
+            <picture className="aboutmeal__picture">
+              <source srcSet={`${woman_webp} 1x, ${woman_webp2x} 2x, ${woman_webp3x} 3x`} />
+              <img
+                src={woman_jpg}
+                srcSet={`${woman_jpg2x} 2x, ${woman_jpg3x} 3x`}
+                alt="Девушка с контейнером для приема пищи"
+                className="aboutmeal__img"
+              />
+            </picture>
+
             <div className="aboutmeal__info">
               <div className="aboutmeal__title">Это как?</div>
               <div className="aboutmeal__description reg">Очень просто.</div>
@@ -50,7 +68,17 @@ function AboutMeal() {
                 </div>
               </div>
             </div>{' '}
-            <img src={aboutPictire2} alt="Контейнеры для приема пищи" className="aboutmeal__img" />
+            <picture className="aboutmeal__picture">
+              <source
+                srcSet={`${containers_webp} 1x, ${containers_webp2x} 2x, ${containers_webp3x} 3x`}
+              />
+              <img
+                src={containers_jpg}
+                srcSet={`${containers_jpg2x} 2x, ${containers_jpg3x} 3x`}
+                alt="Контейнеры для приема пищи"
+                className="aboutmeal__img"
+              />
+            </picture>
           </div>
         </div>
       </Container>
